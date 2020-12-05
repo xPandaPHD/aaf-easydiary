@@ -25,8 +25,12 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <include layout="@layout/layout_edit_contents" />   
-            
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <include layout="@layout/layout_edit_contents" />
+            </androidx.core.widget.NestedScrollView>
+
             <ProgressBar
                 android:id="@+id/photoProgress"
                 android:visibility="gone"
